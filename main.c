@@ -14,10 +14,10 @@ int main (int argc, char *argv[])
 		return 1;
 	}
 	
-	IT8951DisplayExample();
+	// IT8951DisplayExample();
 	IT8951DisplayExample2();
-	printf("IT8951_GUI_Example\n");
-	IT8951_GUI_Example();
+	// printf("IT8951_GUI_Example\n");
+	// IT8951_GUI_Example();
 	
 	
 	if (argc != 4)
