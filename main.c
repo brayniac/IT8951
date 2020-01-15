@@ -14,23 +14,24 @@ int main (int argc, char *argv[])
 		return 1;
 	}
 	
-	// IT8951DisplayExample();
-	IT8951DisplayExample2();
+	IT8951DisplayExample();
+	// IT8951DisplayExample2();
 	// printf("IT8951_GUI_Example\n");
 	// IT8951_GUI_Example();
 	
 	
-	if (argc != 4)
+	if (argc != 5)
 	{
-		printf("Error: argc!=4.\n");
+		printf("Error: argc!=5.\n");
 		exit(1);
 	}
 
-	uint32_t x,y;
+	uint32_t x,y,mode;
 	sscanf(argv[1],"%d",&x);
 	sscanf(argv[2],"%d",&y);
+	sscanf(argv[3],"%d",&mode)
 
-	IT8951_BMP_Example(x,y,argv[3]);
+	IT8951_BMP_Example(x,y,mode,argv[4]);
 	
 	IT8951_Cancel();
 
