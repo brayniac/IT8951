@@ -29,7 +29,7 @@ int main (int argc, char *argv[])
 	uint32_t x,y,mode;
 	sscanf(argv[1],"%d",&x);
 	sscanf(argv[2],"%d",&y);
-	sscanf(argv[3],"%d",&mode)
+	sscanf(argv[3],"%d",&mode);
 
 	IT8951_BMP_Example(x,y,mode,argv[4]);
 	
